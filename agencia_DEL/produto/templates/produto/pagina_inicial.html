@@ -1,0 +1,9 @@
+
+{% extends 'produto/base.html' %}
+
+{% block title %}Página Inicial{% endblock %}
+
+{% block content %}
+    <h1>Bem-vindo à Página Inicial do Produto</h1>
+    <a href="{% url 'cadastrar_produto' %}" class="btn btn-primary">Cadastrar Produto</a>
+{% endblock %}
