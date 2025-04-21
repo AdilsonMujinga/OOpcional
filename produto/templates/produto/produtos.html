@@ -2,6 +2,10 @@
 {% block title%}Cadastrar Produtos{% endblock%}
 {% block content %}
     <h2>Cadastrar Produtos</h2>
-    <!-- Aqui vai a lista dos produtos -->
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Guardar</button>
+    </form>
 {% endblock %}
 
