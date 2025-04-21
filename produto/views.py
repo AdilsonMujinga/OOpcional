@@ -30,3 +30,9 @@ def funcionarios(request):
             form.save()
             return redirect('funcionarios')
     return render(request, 'produto/funcionarios.html', {'form': form})
+
+def motorista(request):
+    return render(request, 'produto/motorista.html')
+
+def transporte(request):
+    return render(request, 'produto/transporte.html')
